@@ -26,7 +26,7 @@
             </div>
         </div>        
         <div class="content-center">
-            <img src="/assets/locaciones-exclusivas.jpg" alt="Venues exclusivos">
+            <img src="/assets/locaciones-exclusivas.png" alt="Venues exclusivos">
         </div>
     </div>
     <div class="content-layout-full">
@@ -99,19 +99,19 @@
     <div class="layout-content">
         <h3 class="subtitle-slim text-center mt-xs-3">@lang('venues.beach-options')</h3>
         <div class="step-wedding">
-                <div class="step-border-top step-wedding-div">
-                    <h2 class="step-title">@lang('venues.beach-option-subtitle-one')</h2>
-                    <p class="text-elipsis" id="text-step-one">
-                        @lang('venues.text-eleven')
-                    </p>
-                </div>
-                <div class="step-border-top">
-                    <h2 class="step-title">@lang('venues.beach-option-subtitle-two')</h2>
-                    <p class="text-elipsis" id="text-step-two">
-                        @lang('venues.text-twelve')
-                    </p>
-                </div>
+            <div class="step-border-top step-wedding-div">
+                <h2 class="step-title">@lang('venues.beach-option-subtitle-one')</h2>
+                <p class="text-elipsis" id="text-step-one">
+                    @lang('venues.text-eleven')
+                </p>
             </div>
+            <div class="step-border-top">
+                <h2 class="step-title">@lang('venues.beach-option-subtitle-two')</h2>
+                <p class="text-elipsis" id="text-step-two">
+                    @lang('venues.text-twelve')
+                </p>
+            </div>
+        </div>
     </div>
     <div class="layout-content">
         <div class="two-cols">

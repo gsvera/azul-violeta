@@ -23,7 +23,9 @@
             <a href="{{$prefijo . 'venues'}}">@lang('components.venues')</a>
         </div>
         <div class="item-menu">@lang('components.weddings-type')</div>
-        <div class="item-menu">@lang('components.group-and-conventions')</div>
+        <div class="item-menu">
+            <a href="{{$prefijo . ($lang == 'es' ? 'grupos-y-convenciones' : 'group-and-conventions')}}">@lang('components.group-and-conventions')</a>
+        </div>
         <div class="item-menu-img">
             <img class="img-logo" src="/assets/logo-azul-violeta.jpg" alt="Logo azul violeta">
         </div>
@@ -56,7 +58,7 @@
                     <div class="item-menu-light"><a href="{{$prefijo}}">@lang('components.home')</a></div>
                     <div class="item-menu-light"><a href="{{$prefijo . 'venues'}}">@lang('components.venues')</a></div>
                     <div class="item-menu-light">@lang('components.weddings-type')</div>
-                    <div class="item-menu-light">@lang('components.group-and-conventions')</div>
+                    <div class="item-menu-light"><a href="{{$prefijo . ($lang == 'es' ? 'grupos-y-convenciones' : 'group-and-conventions')}}">@lang('components.group-and-conventions')</a></div>
                     <div class="item-menu-light">@lang('components.services')</div>
                     <div class="item-menu-light">@lang('components.gallery')</div>
                     <div class="item-menu-light">@lang('components.blog')</div>

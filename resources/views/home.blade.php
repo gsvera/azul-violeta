@@ -10,6 +10,9 @@
         </div>
         <div class="layout-content">
             <h2 class="subtitle-big">@lang('home.subtitle-home')</h2>
+            <div class="content-center my-4">
+                <div class="separator"></div>
+            </div>
             <p class="mt-5">@lang('home.text-one')</p>
             <p>@lang('home.text-two')</p>
             <div class="content-img-home">
