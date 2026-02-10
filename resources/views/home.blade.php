@@ -122,7 +122,7 @@
             <div class="bg-img-choose-us">
                 <div>
                     <div class="layout-content">
-                        <div class="box-border-white">
+                        <div class="box-border-white-3">
                             <div>
                                 <h2 class="subtitle-text-light subtitle-text text-center mb-3">@lang('home.constant-communication')</h2>
                                 <p class="text-light">@lang('home.text-seventeen')</p>
