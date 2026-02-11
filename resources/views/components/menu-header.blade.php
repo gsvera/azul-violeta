@@ -22,7 +22,9 @@
         <div class="item-menu">
             <a href="{{$prefijo . 'venues'}}">@lang('components.venues')</a>
         </div>
-        <div class="item-menu">@lang('components.weddings-type')</div>
+        <div class="item-menu">
+            <a href="{{$prefijo . ($lang == 'es' ? 'tipos-de-bodas' : 'wedding-type' )}}">@lang('components.weddings-type')</a>
+        </div>
         <div class="item-menu">
             <a href="{{$prefijo . ($lang == 'es' ? 'grupos-y-convenciones' : 'group-and-conventions')}}">@lang('components.group-and-conventions')</a>
         </div>
@@ -57,7 +59,7 @@
                 <div>
                     <div class="item-menu-light"><a href="{{$prefijo}}">@lang('components.home')</a></div>
                     <div class="item-menu-light"><a href="{{$prefijo . 'venues'}}">@lang('components.venues')</a></div>
-                    <div class="item-menu-light">@lang('components.weddings-type')</div>
+                    <div class="item-menu-light"><a href="{{$prefijo . ($lang == 'es' ? 'tipos-de-bodas' : 'wedding-type' )}}">@lang('components.weddings-type')</a></div>
                     <div class="item-menu-light"><a href="{{$prefijo . ($lang == 'es' ? 'grupos-y-convenciones' : 'group-and-conventions')}}">@lang('components.group-and-conventions')</a></div>
                     <div class="item-menu-light">@lang('components.services')</div>
                     <div class="item-menu-light">@lang('components.gallery')</div>

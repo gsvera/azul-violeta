@@ -29,3 +29,13 @@ function showText(id) {
         ? "LEER MENOS"
         : "LEER MÁS";
 }
+
+// let index = 0;
+
+// document.getElementById("next").addEventListener("click", () => {});
+
+function changeSlide(slide, index) {
+    const track = document.querySelector(".track-" + slide);
+    index = index === 0 ? 1 : 0;
+    track.style.transform = `translateX(-${index * 100}%)`;
+}

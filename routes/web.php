@@ -16,6 +16,9 @@ Route::get('/venues', function() {
 Route::get('/grupos-y-convenciones', function() {
     return view('groups-and-conventions');
 });
+Route::get('/tipos-de-bodas', function() {
+    return view('wedding-type');
+});
 
 Route::group(['prefix' => 'en'], function() {
     Route::get('/', function() {
@@ -30,5 +33,8 @@ Route::group(['prefix' => 'en'], function() {
     });
     Route::get('/group-and-conventions', function() {
         return view('groups-and-conventions');
+    });
+    Route::get('/wedding-type', function() {
+        return view('wedding-type');
     });
 });

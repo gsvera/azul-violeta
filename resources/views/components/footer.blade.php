@@ -1,3 +1,16 @@
+@php
+    $lang = App::getLocale();
+    $prefijo = "";
+
+    if($lang == 'es')
+    {
+        $prefijo = '/';
+    }
+    else{
+        $prefijo = '/en/';
+    }
+@endphp
+
 <div>
     <x-contact-box />
     <div class="footer">
@@ -8,10 +21,10 @@
                 </div>
                 <div class="content-menu-footer">
                     <div class="menu-footer">
-                        <div>@lang('components.home')</div>
-                        <div>@lang('components.venues')</div>
-                        <div>@lang('components.weddings-type')</div>
-                        <div>@lang('components.group-and-conventions')</div>
+                        <div><a href="{{$prefijo}}">@lang('components.home')</a></div>
+                        <div><a href="{{$prefijo . 'venues'}}">@lang('components.venues')</a></div>
+                        <div><a href="{{$prefijo . ($lang == 'es' ? 'tipos-de-bodas' : 'wedding-type' )}}">@lang('components.weddings-type')</a></div>
+                        <div><a href="{{$prefijo . ($lang == 'es' ? 'grupos-y-convenciones' : 'group-and-conventions')}}">@lang('components.group-and-conventions')</a></div>
                         <div>@lang('components.services')</div>
                         <div>@lang('components.gallery')</div>
                         <div>@lang('components.blog')</div>
@@ -37,7 +50,7 @@
             </div>
             <div class="content-space-between-desk">
                 <div class="text-light mt-xs-3">@lang('components.privacy')</div>
-                <div class="text-light ml-4 mt-xs-3">@lang('components.terms')</div>
+                <div class="text-light ml-ds-4 mt-xs-3">@lang('components.terms')</div>
             </div>
         </div>
     </div>
