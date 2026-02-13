@@ -1,0 +1,26 @@
+<?php
+
+return [
+        'title' => 'Privacy Policy and Data Protection',
+        'subtitle' => 'Your Privacy is Important to Us',
+        'text-one' => 'At Azul Violeta, we are committed to protecting the privacy of our clients and visitors. This policy describes how we collect, use, and protect your personal information in accordance with Mexico\'s Federal Law on Protection of Personal Data Held by Private Parties (LFPDPPP).',
+        'subtitle-one' => 'INFORMATION WE COLLECT',
+        'important-data-one' => 'Contact Data',
+        'text-two' => 'Full name, email address, phone number, physical address, and any information you voluntarily provide when contacting us or requesting our services.',
+        'important-data-two' => 'Event Data',
+        'text-three' => 'Information related to your wedding: date, guest count, selected venue, contracted vendors, and service preferences.',
+        'important-data-three' => 'Browsing Data',
+        'text-four' => 'Technical information about your visit to the website: IP address, browser type, pages visited, and time spent on the site, collected through cookies.',
+        'subtitle-two' => 'USE OF INFORMATION',
+        'text-five' => 'We use your information to: provide the contracted wedding planning services, communicate with you regarding your event, send relevant information and promotions (if authorized), improve our services and website, and comply with legal obligations.',
+        'subtitle-three' => 'DATA PROTECTION',
+        'text-six' => 'We implement technical, administrative, and physical security measures to protect your personal information against unauthorized access, loss, or alteration. Only authorized personnel have access to your data.',
+        'subtitle-four' => 'INFORMATION SHARING',
+        'text-seven' => 'We share strictly necessary information with the vendors involved in your event (venue, catering, photographer, etc.) for service delivery. We do not sell or transfer your information to third parties for commercial purposes.',
+        'subtitle-five' => 'YOUR ARCO RIGHTS',
+        'text-eight' => 'You have the right to Access, Rectify, Cancel, or Oppose the processing of your personal data. To exercise these rights, please contact us at [privacy email]. We will respond to your request within a maximum of 20 business days.',
+        'text-nine' => 'We use cookies to enhance your browsing experience. You can configure your browser to reject cookies, though this may affect the site\'s functionality.',
+        'subtitle-six' => 'CHANGES TO THIS POLICY',
+        'text-ten' => 'We may update this policy occasionally. The last update date is indicated at the end of the document. We recommend checking this page periodically.',
+        'date' => 'Last updated: February 15, 2026',
+    ];

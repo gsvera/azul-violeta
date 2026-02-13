@@ -31,10 +31,10 @@
         <div class="item-menu-img">
             <img class="img-logo" src="/assets/logo-azul-violeta.jpg" alt="Logo azul violeta">
         </div>
-        <div class="item-menu">@lang('components.services')</div>
-        <div class="item-menu">@lang('components.gallery')</div>
+        <div class="item-menu"><a href="{{$prefijo . ($lang == 'es' ? 'servicios' : 'services') }}">@lang('components.services')</a></div>
+        <div class="item-menu"><a href="{{$prefijo . ($lang == 'es' ? 'galeria' : 'gallery')}}">@lang('components.gallery')</a></div>
         <div class="item-menu">@lang('components.blog')</div>
-        <div class="item-menu">@lang('components.contanct')</div>
+        <div class="item-menu"><a href="#contact">@lang('components.contanct')</a></div>
         <div class="item-menu">
             <a href="{{$prefijoTranslate}}" class="btn-lang">{{Str::upper($lang == 'en' ? 'es' : 'en')}}</a>
         </div>
@@ -61,10 +61,10 @@
                     <div class="item-menu-light"><a href="{{$prefijo . 'venues'}}">@lang('components.venues')</a></div>
                     <div class="item-menu-light"><a href="{{$prefijo . ($lang == 'es' ? 'tipos-de-bodas' : 'wedding-type' )}}">@lang('components.weddings-type')</a></div>
                     <div class="item-menu-light"><a href="{{$prefijo . ($lang == 'es' ? 'grupos-y-convenciones' : 'group-and-conventions')}}">@lang('components.group-and-conventions')</a></div>
-                    <div class="item-menu-light">@lang('components.services')</div>
-                    <div class="item-menu-light">@lang('components.gallery')</div>
+                    <div class="item-menu-light"><a href="{{$prefijo . ($lang == 'es' ? 'servicios' : 'services') }}">@lang('components.services')</a></div>
+                    <div class="item-menu-light"><a href="{{$prefijo . ($lang == 'es' ? 'galeria' : 'gallery')}}">@lang('components.gallery')</a></div>
                     <div class="item-menu-light">@lang('components.blog')</div>
-                    <div class="item-menu-light">@lang('components.contanct')</div>
+                    <div class="item-menu-light" id="btn-contact"><a href="#contact">@lang('components.contanct')</a></div>
                 </div>
             </div>
         </div>

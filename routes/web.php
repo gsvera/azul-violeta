@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+// use Illuminate\Support\Facades\Mail;
+// use App\Mail\ContactMail;
+use App\Http\Controllers\SendMailController;
 
 Route::get('/', function () {
     $locale = 'es';
@@ -19,6 +22,26 @@ Route::get('/grupos-y-convenciones', function() {
 Route::get('/tipos-de-bodas', function() {
     return view('wedding-type');
 });
+Route::get('/servicios', function() {
+    return view('services');
+});
+Route::get('/galeria', function() {
+    return view('gallery');
+});
+Route::get('/gracias', function(){
+    return view('home');
+});
+Route::post('/gracias', [SendMailController::class, 'Send']);
+Route::get('/politica-de-privacidad', function(){
+    return view('privacy');
+});
+Route::get('/terminos-y-condiciones', function(){
+    return view('terms-and-conditions');
+});
+
+
+Route::permanentRedirect('/blog', '/blog')->name('blog');
+
 
 Route::group(['prefix' => 'en'], function() {
     Route::get('/', function() {
@@ -36,5 +59,21 @@ Route::group(['prefix' => 'en'], function() {
     });
     Route::get('/wedding-type', function() {
         return view('wedding-type');
+    });
+    Route::get('/services', function() {
+        return view('services');
+    });
+    Route::get('/gallery', function() {
+        return view('gallery');
+    });
+    Route::get('/thanks', function(){
+        return view('home');
+    });
+    Route::post('/thanks', [SendMailController::class, 'Send']);
+    Route::get('/privacy-policy', function(){
+        return view('privacy');
+    });
+    Route::get('/terms-and-conditions', function(){
+        return view('terms-and-conditions');
     });
 });

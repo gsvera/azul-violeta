@@ -103,7 +103,9 @@
             </div>
         </div>
         <div class="layout-content-full">
-            <h2 class="subtitle-slim text-center">@lang('home.our-team')</h2>
+            <div class="bg-secodary pt-5">
+                <h2 class="subtitle-slim text-center">@lang('home.our-team')</h2>
+            </div>
             <div class="content-our-team">                
                 <div>
                     <img class="img-our-team" src="/assets/trabaja-con-nosotros.jpg" alt="Equipo de coordinación durante boda">
@@ -237,6 +239,138 @@
                 </div>
             </div>
         </div>
-        
+        <div class="content-layout bg-secondary p-r-5 mb-5">
+            <div class="wd-7">
+                <p class="subtitle-big mt-xs-3">@lang('home.title-faq')</p>
+                <p>@lang('home.text-faq')</p>
+    
+                <p class="subtitle-slim mt-5 mb-1">@lang('home.sub-faq-one')</p>
+                <div class="box-faq">
+                    <div class="content-space-between">
+                        <div>
+                            <h3 class="question">@lang('home.faq-one')</h3>
+                        </div>
+                        <div>
+                            <i onclick='showFaq(1, this)' class="fa fa-plus cursor" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <p class="text-faq" id="answer-1">@lang('home.answer-one')</p>
+                </div>
+                <div class="box-faq">
+                    <div class="content-space-between">
+                        <div>
+                            <h3 class="question">@lang('home.faq-two')</h3>
+                        </div>
+                        <div>
+                            <i onclick='showFaq(2, this)' class="fa fa-plus cursor" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <p class="text-faq" id="answer-2">@lang('home.answer-two')</p>
+                </div>
+                <div class="box-faq">
+                    <div class="content-space-between">
+                        <div>
+                            <h3 class="question">@lang('home.faq-three')</h3>
+                        </div>
+                        <div>
+                            <i onclick='showFaq(3, this)' class="fa fa-plus cursor" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <p class="text-faq" id="answer-3">@lang('home.answer-three')</p>
+                </div>
+                <p class="subtitle-slim mt-5 mb-1">@lang('home.sub-faq-two')</p>
+                <div class="box-faq">
+                    <div class="content-space-between">
+                        <div>
+                            <h3 class="question">@lang('home.faq-four')</h3>
+                        </div>
+                        <div>
+                            <i onclick='showFaq(4, this)' class="fa fa-plus cursor" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <p class="text-faq" id="answer-4">@lang('home.answer-four')</p>
+                </div>
+                <div class="box-faq">
+                    <div class="content-space-between">
+                        <div>
+                            <h3 class="question">@lang('home.faq-five')</h3>
+                        </div>
+                        <div>
+                            <i onclick='showFaq(5, this)' class="fa fa-plus cursor" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <p class="text-faq" id="answer-5">@lang('home.answer-five')</p>
+                </div>      
+                <p class="subtitle-slim mt-5 mb-1">@lang('home.sub-faq-three')</p>
+                <div class="box-faq">
+                    <div class="content-space-between">
+                        <div>
+                            <h3 class="question">@lang('home.faq-six')</h3>
+                        </div>
+                        <div>
+                            <i onclick='showFaq(6, this)' class="fa fa-plus cursor" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <p class="text-faq" id="answer-6">@lang('home.answer-six')</p>
+                </div>
+                <div class="box-faq">
+                    <div class="content-space-between">
+                        <div>
+                            <h3 class="question">@lang('home.faq-seven')</h3>
+                        </div>
+                        <div>
+                            <i onclick='showFaq(7, this)' class="fa fa-plus cursor" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <p class="text-faq" id="answer-7">@lang('home.answer-seven')</p>
+                </div> 
+                <p class="subtitle-slim mt-5 mb-1">@lang('home.sub-faq-four')</p>
+                <div class="box-faq">
+                    <div class="content-space-between">
+                        <div>
+                            <h3 class="question">@lang('home.faq-eight')</h3>
+                        </div>
+                        <div>
+                            <i onclick='showFaq(8, this)' class="fa fa-plus cursor" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <p class="text-faq" id="answer-8">@lang('home.answer-eight')</p>
+                </div>
+                <div class="box-faq">
+                    <div class="content-space-between">
+                        <div>
+                            <h3 class="question">@lang('home.faq-nine')</h3>
+                        </div>
+                        <div>
+                            <i onclick='showFaq(9, this)' class="fa fa-plus cursor" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <p class="text-faq" id="answer-9">@lang('home.answer-nine')</p>
+                </div> 
+                <p class="subtitle-slim mt-5 mb-1">@lang('home.sub-faq-five')</p>
+                <div class="box-faq">
+                    <div class="content-space-between">
+                        <div>
+                            <h3 class="question">@lang('home.faq-ten')</h3>
+                        </div>
+                        <div>
+                            <i onclick='showFaq(10, this)' class="fa fa-plus cursor" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <p class="text-faq" id="answer-10">@lang('home.answer-ten')</p>
+                </div>
+                <div class="box-faq">
+                    <div class="content-space-between">
+                        <div>
+                            <h3 class="question">@lang('home.faq-eleven')</h3>
+                        </div>
+                        <div>
+                            <i onclick='showFaq(11, this)' class="fa fa-plus cursor" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <p class="text-faq" id="answer-11">@lang('home.answer-eleven')</p>
+                </div> 
+            </div>
+        </div>
     </div>
 @endsection

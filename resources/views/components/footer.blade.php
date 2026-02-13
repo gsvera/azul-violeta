@@ -25,8 +25,8 @@
                         <div><a href="{{$prefijo . 'venues'}}">@lang('components.venues')</a></div>
                         <div><a href="{{$prefijo . ($lang == 'es' ? 'tipos-de-bodas' : 'wedding-type' )}}">@lang('components.weddings-type')</a></div>
                         <div><a href="{{$prefijo . ($lang == 'es' ? 'grupos-y-convenciones' : 'group-and-conventions')}}">@lang('components.group-and-conventions')</a></div>
-                        <div>@lang('components.services')</div>
-                        <div>@lang('components.gallery')</div>
+                        <div><a href="{{$prefijo . ($lang == 'es' ? 'servicios' : 'services') }}">@lang('components.services')</a></div>
+                        <div><a href="{{$prefijo . ($lang == 'es' ? 'galeria' : 'gallery')}}">@lang('components.gallery')</a></div>
                         <div>@lang('components.blog')</div>
                     </div>
                 </div>
@@ -49,8 +49,8 @@
                 <p class="text-light">COPYRIGHT © 2026 HUELLA DIGITAL</p>
             </div>
             <div class="content-space-between-desk">
-                <div class="text-light mt-xs-3">@lang('components.privacy')</div>
-                <div class="text-light ml-ds-4 mt-xs-3">@lang('components.terms')</div>
+                <div class="text-light mt-xs-3"><a href="{{$prefijo . ($lang == 'es' ? 'politica-de-privacidad' : 'privacy-policy')}}">@lang('components.privacy')</a></div>
+                <div class="text-light ml-ds-4 mt-xs-3"><a href="{{$prefijo . ($lang == 'es' ? 'terminos-y-condiciones' : 'terms-and-conditions')}}">@lang('components.terms')</a></div>
             </div>
         </div>
     </div>
